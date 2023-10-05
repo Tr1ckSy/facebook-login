@@ -127,7 +127,11 @@ a:hover {
   	text-align: center;
   }
   .info-container {
-  	margin: 0;
+  	margin:  0 30px 0px 0;
   	width: 400px;
   }
+  .logo-fb {
+  	margin-left: 30px;
+  }
+
 }
