@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;;
+}
+body {
+	background: #f0f2f5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.container-mae {
+
+	display: flex;
+	justify-content: space-evenly;
+	gap: 90px;
+	align-items: center;
+}
+h2 {
+	font-weight: 500;
+	letter-spacing: normal;
+	text-align: start;
+	margin-top: -10px;
+	margin-left: 33px;
+	color: #1c1e21;
+	font-size: 1.75rem;
+}
+img {
+		text-align: start;
+	width: 310.93px;
+}
+.info-container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	justify-content: center;
+	width: 510px;
+	margin:  0 0 120px 0;
+
+}
+
+.card-login {
+
+	text-align: center;
+	background: #fff;
+	box-sizing: border-box;
+	margin: 40px 0 0;
+	padding: 20px 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 396px;
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+}
+input {
+
+	border: 1px solid #dddfe2;
+	border-radius: 6px;
+	padding: 20px;
+	font-size: 17px;
+	width: 360px;
+	height: 55px;
+}
+input:focus {
+	border: 1px solid #1877f2;
+}
+button {
+	margin-bottom: 15px;
+	border: none;
+	background: #1877f2;
+	color: #fff;
+	border-radius: 6px;
+	font-size: 20px;
+	font-weight: 900;
+	width: 360px;
+	height:48px;
+}
+.conta-nova {
+	font-size: 15px;
+	width: 150px;
+	background-color: #42b72a;
+}
+
+hr {
+  border: none;
+  width: 10px auto;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+a{
+	text-decoration: none;
+	color: #1877f2;
+
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.card-info {
+
+	font-size: 14px;
+	margin: 25px 0;
+	text-align: center;
+}
+
+.info {
+	color: #000;
+}
+
+@media (max-width: 764px) {
+	
+  .container-mae {
+  	flex-direction: column;
+  	text-align: center;
+  	align-items: center;
+  	gap: 0;
+
+  }
+  h2 {
+  	font-size: 1.5rem;
+  	text-align: center;
+  }
+  .info-container {
+  	margin: 0;
+  	width: 400px;
+  }
+}

